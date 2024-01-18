@@ -1,0 +1,9 @@
+@import '../sass/base';
+
+.main {
+  @include row;
+}
+
+.menu {
+  margin-left: 300px;
+}

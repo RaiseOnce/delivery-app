@@ -6,6 +6,7 @@ body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   background-color: $color-bg;
+  color: $color-black;
 }
 
 a {
@@ -19,6 +20,8 @@ a {
 
 .container {
   margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
   padding: 0;
   @include container;
   justify-content: space-between;

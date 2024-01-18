@@ -20,6 +20,6 @@ a {
 .container {
   margin: 0 auto;
   padding: 0;
-  @include col;
+  @include container;
   justify-content: space-between;
 }

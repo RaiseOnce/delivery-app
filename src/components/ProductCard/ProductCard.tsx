@@ -1,10 +1,11 @@
 import { ProductCardsProps } from '@/types'
 import React, { FC } from 'react'
 import styles from './ProductCart.module.scss'
+import Link from 'next/link'
 
 const ProductCard: FC<ProductCardsProps> = ({ title, description, image }) => {
   return (
-    <div className={styles.card}>
+    <Link href={`/`} className={styles.card}>
       <img className={styles.img} src="/pizza.png" alt="" />
       <div className={styles.content}>
         <h3 className={styles.header}>Наслаждение</h3>
@@ -23,7 +24,7 @@ const ProductCard: FC<ProductCardsProps> = ({ title, description, image }) => {
         <span>4.5</span>
         <img src="/star.svg" alt="" />
       </div>
-    </div>
+    </Link>
   )
 }
 

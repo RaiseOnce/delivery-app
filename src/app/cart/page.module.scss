@@ -1,0 +1,9 @@
+@import '../../sass/base';
+
+.main {
+  @include row;
+}
+
+.cart {
+  margin-left: 300px;
+}

@@ -1,9 +1,14 @@
+'use client'
+
 import React from 'react'
 import styles from './Sidebar.module.scss'
 import Button from '../Button/Button'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 const Sidebar = () => {
+  const pathname = usePathname()
+
   return (
     <div className={styles.sidebar}>
       <div className={styles.wrapper}>
@@ -18,11 +23,21 @@ const Sidebar = () => {
 
         <div className={styles.nav}>
           <div className={styles.navItems}>
-            <Link href="/#" className={styles.navItem}>
+            <Link
+              href="/"
+              className={`${styles.navItem} ${
+                pathname === '/' ? styles.navItemActive : ''
+              }`}
+            >
               <img src="./doc.svg" alt="" />
               <span>Меню</span>
             </Link>
-            <Link href="/#" className={styles.navItem}>
+            <Link
+              href="/cart"
+              className={`${styles.navItem} ${
+                pathname === '/cart' ? styles.navItemActive : ''
+              }`}
+            >
               <img src="./bag.svg" alt="" />
               <span>Корзина</span>
             </Link>

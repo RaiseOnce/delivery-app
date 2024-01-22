@@ -1,0 +1,78 @@
+@import '../../sass/base';
+
+.containerInner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar {
+  padding: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100vh;
+  border-right: 1px solid $color-border;
+}
+
+.logo {
+  max-width: 362px;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+.content {
+  padding: 86px;
+  width: 50%;
+}
+
+.header {
+  margin-bottom: 30px !important;
+}
+
+.form {
+  @include col;
+  max-width: 324px;
+}
+
+.inputWrapper {
+  @include col;
+
+  span {
+    margin-bottom: 6px;
+    font-weight: 400;
+    @include font-size(16px, 16px);
+    color: $color-silver;
+  }
+
+  &:first-child {
+    margin-bottom: 30px;
+  }
+}
+
+.input {
+  width: 100%;
+}
+
+.btn {
+  padding: 18px 100px !important;
+  margin: 0 auto;
+  width: fit-content;
+  margin-top: 70px;
+  font-weight: 400 !important;
+}
+
+.foot {
+  @include col;
+  margin-top: 30px;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+
+  a {
+    color: $color-main;
+    cursor: pointer;
+  }
+}

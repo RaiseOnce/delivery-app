@@ -3,6 +3,7 @@ import styles from './Button.module.scss'
 import { ButtonProps } from '@/types'
 
 const Button: FC<ButtonProps> = ({
+  className,
   children,
   appearence = 'small',
   ...props
@@ -10,9 +11,15 @@ const Button: FC<ButtonProps> = ({
   return (
     <button
       {...props}
-      className={`${styles.btn} ${
-        appearence === 'small' ? styles.btnSmall : styles.btnBig
-      }`}
+      className={
+        className === undefined
+          ? `${styles.btn} ${
+              appearence === 'small' ? styles.btnSmall : styles.btnBig
+            }`
+          : `${styles.btn} ${
+              appearence === 'small' ? styles.btnSmall : styles.btnBig
+            } ${className}`
+      }
     >
       {children}
     </button>

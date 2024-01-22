@@ -19,7 +19,23 @@ export interface HeaderProps extends HTMLAttributes<HTMLHeadingElement> {
 export interface SearchProps extends InputHTMLAttributes<HTMLInputElement> {}
 
 export interface ProductCardsProps {
-  title: string
+  name: string
   description: string
   image: string
+  id: number
+  rating: number
+  price: number
+}
+
+export interface ProductProps {
+  id: number
+  name: string
+  price: number
+  ingredients: string[]
+  image: string
+  rating: number
+}
+
+export interface ProductCards {
+  products: ProductProps[]
 }

@@ -1,5 +1,5 @@
 {
-  "name": "pizza-delivery",
+  "name": "pizza-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@svgr/webpack": "^8.1.0",
+    "axios": "^1.6.5",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",

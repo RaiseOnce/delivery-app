@@ -12,7 +12,7 @@ const ProductCard: FC<ProductCardsProps> = ({
   image,
 }) => {
   return (
-    <Link href={`/`} className={styles.card}>
+    <Link href={`/${id}`} className={styles.card}>
       <img className={styles.img} src={image} alt="" />
       <div className={styles.content}>
         <h3 className={styles.header}>{name}</h3>
